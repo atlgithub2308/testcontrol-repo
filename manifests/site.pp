@@ -51,7 +51,7 @@ node 'testredhat8.atl88.online' {
 }
 
 node 'testredhat8agent.atl88.online' {
-  #include sce_linux
+  include sce_linux
   user { 'user2':
     ensure => 'present',
   }
