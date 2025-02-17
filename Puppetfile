@@ -1,4 +1,3 @@
-forge 'https://forgenext-web-dev.ops.puppetlabs.net/'
 
 # Modules from the Puppet Forge
 # Versions should be updated to be the latest at the time you start
