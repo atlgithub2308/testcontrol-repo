@@ -7,6 +7,8 @@ mod 'puppetlabs/concat'
 mod 'puppetlabs/puppetdb'
 mod 'puppetlabs/postgresql'
 mod 'puppetlabs/firewall'
+mod 'puppetlabs/sce_linux'
+mod 'puppetlabs/sce_windows'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
