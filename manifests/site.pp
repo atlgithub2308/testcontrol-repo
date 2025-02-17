@@ -34,3 +34,25 @@ node default {
     }
   }
 }
+
+node 'testredhat8.atl88.online' {
+  
+  user { 'user1':
+    ensure => 'present',
+  }
+  package { ['httpd', 'chrony']:
+    ensure => installed,
+  }
+
+  service { ['httpd', 'chronyd']:
+    ensure    => running,
+    enable    => true,
+    require   => Package['httpd', 'chrony'],
+  }
+}
+
+node 'testredhat8agent.atl88.online' {
+}
+
+node 'windowsagent.atl88.online' {
+}
