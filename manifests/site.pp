@@ -58,6 +58,7 @@ node 'testredhat8agent.atl88.online' {
 }
 
 node 'windowsagent.atl88.online' {
+  include sce_windows
   user { 'johndoewin1':
     ensure     => 'present',
     password   => 'P@ssw0rd12345678',
