@@ -24,8 +24,13 @@ File { backup => false }
 # Puppet Enterprise console and External Node Classifiers (ENC's).
 #
 # For more on node definitions, see: https://puppet.com/docs/puppet/latest/lang_node_definitions.html
+
 node default {
-  # This is where you can declare classes for all nodes.
-  # Example:
-  #   class { 'my_class': }
+  # Check if we've set the role for this node via trusted fact, pp_role.  If yes; include that role directly here.
+  if !empty( $trusted['extensions']['pp_role'] ) {
+    $role = $trusted['extensions']['pp_role']
+    if defined("role::${role}") {
+      include "role::${role}"
+    }
+  }
 }
