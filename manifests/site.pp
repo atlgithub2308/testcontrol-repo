@@ -52,7 +52,19 @@ node 'testredhat8.atl88.online' {
 }
 
 node 'testredhat8agent.atl88.online' {
+  user { 'user2':
+    ensure => 'present',
+  }
 }
 
 node 'windowsagent.atl88.online' {
+  user { 'johndoewin1':
+    ensure     => 'present',
+    password   => 'P@ssw0rd12345678',
+    groups     => ['Administrators'],
+  }
+
+  file { 'C:/mydir':
+    ensure => 'directory',
+  }
 }
