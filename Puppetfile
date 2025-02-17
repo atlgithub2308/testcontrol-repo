@@ -9,6 +9,17 @@ mod 'puppetlabs/postgresql'
 mod 'puppetlabs/firewall'
 mod 'puppetlabs/sce_linux'
 mod 'puppetlabs/sce_windows'
+mod 'puppetlabs/augeas_core' 
+mod 'puppetlabs/firewalld' 
+mod 'puppetlabs/logrotate' 
+mod 'puppetlabs/selinux'
+mod 'puppetlabs/systemd'  
+mod 'puppetlabs/registry' 
+mod 'puppetlabs/networkingdsc' 
+mod 'puppetlabs/auditpolicydsc' 
+mod 'puppetlabs/securitypolicydsc' 
+mod 'puppetlabs/pwshlib' 
+mod 'puppetlabs/powershell' 
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
